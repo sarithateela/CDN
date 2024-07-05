@@ -7,6 +7,39 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style>
+    body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+#root{
+    width: 55%;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.title {
+    color: #333;
+}
+p {
+    line-height: 1.8;
+    color: #555;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
     <div id="root"></div>
@@ -17,7 +50,7 @@
                 return(
                     
                 <div>
-                    
+                   
                     <h1>TOPICS COVERED</h1>
                   <p>The following is a list of all the topics we cover in the MDN learning area.</p>
                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" >Getting started with the web</a>
