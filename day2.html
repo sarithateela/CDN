@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+     class App extends React.Component{
+            render()
+            {
+                return(
+                    
+                <div>
+                    
+                    <h1>TOPICS COVERED</h1>
+                  <p>The following is a list of all the topics we cover in the MDN learning area.</p>
+                   <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" >Getting started with the web</a>
+                   <p>Provides a practical introduction to web development for complete beginners.</p>
+                   <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML-Structring the web</a>
+                   <p>HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is.This topic teaches HTML in detail.</p>
+                   <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">CSS-Styling the web</a>
+                    <p>CSS is the language that we use to control our web content's style and layout,as well as adding behaviour like animation.This topic provides comprehensive coverage of CSS.</p>
+                    </div>
+
+                );
+            }
+        }
+        ReactDOM.render(<App />,document.getElementById('root'));
+    </script>
+</body>
+</html>
